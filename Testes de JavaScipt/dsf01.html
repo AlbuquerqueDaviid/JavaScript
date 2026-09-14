@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANÁLISE DE DADOS</title>
+<style>
+    body {
+        width: 99vw;
+        height: 99vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 0, 0, 0.692);
+        margin: auto;
+    }
+    main {
+        width: 800px;
+        height: 800px;
+        border: 1px solid black;
+        background-color: white;
+
+    }
+    main > h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <main>
+        <h1>Checkup de dados </h1>
+        Nacionalidade: <input type="text" name="pais" id="pais">
+        <input type="button" value="Send" onclick="checar()">
+    </main>
+    <div id="nac">
+
+    </div>
+    
+    <script>
+        function checar(){
+            var pais = window.document.querySelector('main#pais')
+            var nac = window.document.checar()
+
+            if (nac == Brasil){
+            nac.innerHTML = `Você Não é estrangeiro Bem Vindo de volta!`
+            }
+            else (nac != Brasil) {
+            nac.innerHTML = `Você é estrangeiro, Bem vindo ao Brasil!`
+            }
+            
+        }
+    </script>
+</body>
+</html>
